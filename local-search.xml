@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>PAT甲级_1001(A+B Format)</title>
+    <link href="/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/"/>
+    <url>/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/</url>
+    
+    <content type="html"><![CDATA[<h4 id="1001-A-B格式"><a href="#1001-A-B格式" class="headerlink" title="1001 A+B格式"></a>1001 A+B格式</h4><p>计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字)</p><h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。</p><h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。</p><h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-1000000</span> <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure><h6 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-999</span>,<span class="hljs-number">991</span><br></code></pre></td></tr></table></figure><h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a, b;<br>    <span class="hljs-keyword">while</span>(cin &gt;&gt; a &gt;&gt; b) &#123;<br>        <span class="hljs-type">int</span> sum = a + b;<br>        <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;       <span class="hljs-comment">//表示正数</span><br>        <span class="hljs-keyword">if</span>(!sum) &#123;<br>            cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; endl;<br>            <span class="hljs-keyword">continue</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>            sum = -sum;<br>        &#125;<br>        string str = <span class="hljs-string">&quot;&quot;</span>;<br>        <span class="hljs-keyword">while</span>(sum) &#123;<br>            str += (sum % <span class="hljs-number">10</span>) + <span class="hljs-string">&#x27;0&#x27;</span>;<br>            sum /= <span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(!sign) &#123;<br>            cout &lt;&lt; <span class="hljs-string">&#x27;-&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            cout &lt;&lt; str[i];<br>            <span class="hljs-keyword">if</span>(i &amp;&amp; i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&#x27;,&#x27;</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; endl;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>PAT</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>计算机证书</tag>
+      
+      <tag>PAT甲级</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>软件项目管理</title>
     <link href="/2024/11/20/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     <url>/2024/11/20/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</url>
