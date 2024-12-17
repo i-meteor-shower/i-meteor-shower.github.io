@@ -19,15 +19,15 @@
   <meta name="author" content="IMS">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+    <meta name="description" content="1005 拼写正确给定一个非负整数N，您的任务是计算N的所有位数之和，并用英语输出总和的每位数字。 输入规范每个输入文件包含一个测试用例。每个案例占用一行，其中包含N（≤10100) 输出规范对于每个测试用例，在一行中输和的没位数的英文单词表示方式。两个连续单词之间必须有一个空格，但行的末尾不能有多余的空格。 输入样例1212345 输出样例1one five 解题思路只需要注意一点就是N的范围，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT甲级_1001(A+B Format)">
-<meta property="og:url" content="http://example.com/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/index.html">
+<meta property="og:title" content="PAT甲级_1005(Spell It Right)">
+<meta property="og:url" content="http://example.com/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1005/index.html">
 <meta property="og:site_name" content="流星雨">
-<meta property="og:description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+<meta property="og:description" content="1005 拼写正确给定一个非负整数N，您的任务是计算N的所有位数之和，并用英语输出总和的每位数字。 输入规范每个输入文件包含一个测试用例。每个案例占用一行，其中包含N（≤10100) 输出规范对于每个测试用例，在一行中输和的没位数的英文单词表示方式。两个连续单词之间必须有一个空格，但行的末尾不能有多余的空格。 输入样例1212345 输出样例1one five 解题思路只需要注意一点就是N的范围，">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-12-26T14:45:51.000Z">
-<meta property="article:modified_time" content="2024-12-16T15:18:17.688Z">
+<meta property="article:published_time" content="2024-12-17T15:38:50.000Z">
+<meta property="article:modified_time" content="2024-12-17T15:41:22.172Z">
 <meta property="article:author" content="IMS">
 <meta property="article:tag" content="计算机证书">
 <meta property="article:tag" content="PAT甲级">
@@ -35,7 +35,7 @@
   
   
   
-  <title>PAT甲级_1001(A+B Format) - 流星雨</title>
+  <title>PAT甲级_1005(Spell It Right) - 流星雨</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PAT甲级_1001(A+B Format)"></span>
+            <span id="subtitle" data-typed-text="PAT甲级_1005(Spell It Right)"></span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-26 22:45" pubdate>
-          2024年12月26日 晚上
+        <time datetime="2024-12-17 23:38" pubdate>
+          2024年12月17日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          268 字
+          318 字
         
       </span>
     
@@ -285,17 +285,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">PAT甲级_1001(A+B Format)</h1>
+            <h1 id="seo-header">PAT甲级_1005(Spell It Right)</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="1001-A-B格式"><a href="#1001-A-B格式" class="headerlink" title="1001 A+B格式"></a>1001 A+B格式</h4><p>计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字)</p>
-<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。</p>
-<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。</p>
-<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-1000000</span> <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure>
-<h6 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-999</span>,<span class="hljs-number">991</span><br></code></pre></td></tr></table></figure>
-<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a, b;<br>    <span class="hljs-keyword">while</span>(cin &gt;&gt; a &gt;&gt; b) &#123;<br>        <span class="hljs-type">int</span> sum = a + b;<br>        <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;       <span class="hljs-comment">//表示正数</span><br>        <span class="hljs-keyword">if</span>(!sum) &#123;<br>            cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; endl;<br>            <span class="hljs-keyword">continue</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>            sum = -sum;<br>        &#125;<br>        string str = <span class="hljs-string">&quot;&quot;</span>;<br>        <span class="hljs-keyword">while</span>(sum) &#123;<br>            str += (sum % <span class="hljs-number">10</span>) + <span class="hljs-string">&#x27;0&#x27;</span>;<br>            sum /= <span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(!sign) &#123;<br>            cout &lt;&lt; <span class="hljs-string">&#x27;-&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            cout &lt;&lt; str[i];<br>            <span class="hljs-keyword">if</span>(i &amp;&amp; i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&#x27;,&#x27;</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; endl;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h4 id="1005-拼写正确"><a href="#1005-拼写正确" class="headerlink" title="1005 拼写正确"></a>1005 拼写正确</h4><p>给定一个非负整数N，您的任务是计算N的所有位数之和，并用英语输出总和的每位数字。</p>
+<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个案例占用一行，其中包含N（≤10<del>100</del>)</p>
+<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，在一行中输和的没位数的英文单词表示方式。两个连续单词之间必须有一个空格，但行的末尾不能有多余的空格。</p>
+<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">12345</span><br><br></code></pre></td></tr></table></figure>
+<h5 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp">one five<br></code></pre></td></tr></table></figure>
+<h5 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h5><p>只需要注意一点就是N的范围，长整型也表示不出来，所以输入字符串。</p>
+<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br>string value[<span class="hljs-number">10</span>] = &#123;<span class="hljs-string">&quot;zero&quot;</span>, <span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>, <span class="hljs-string">&quot;five&quot;</span>, <span class="hljs-string">&quot;six&quot;</span>, <span class="hljs-string">&quot;seven&quot;</span>, <span class="hljs-string">&quot;eight&quot;</span>, <span class="hljs-string">&quot;nine&quot;</span>&#125;;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    string str;<br>    cin &gt;&gt; str;<br>    <span class="hljs-type">int</span> sum = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; str.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        sum += str[i] - <span class="hljs-string">&#x27;0&#x27;</span>;<br>    &#125;<br>    vector&lt;string&gt; vt;<br>    <span class="hljs-keyword">if</span>(!sum) &#123;<br>        vt.<span class="hljs-built_in">push_back</span>(value[<span class="hljs-number">0</span>]);<br>    &#125;<br>    <span class="hljs-keyword">while</span>(sum) &#123;<br>        vt.<span class="hljs-built_in">push_back</span>(value[sum%<span class="hljs-number">10</span>]);<br>        sum /= <span class="hljs-number">10</span>;<br>    &#125;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = vt.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt; <span class="hljs-number">0</span>; i--) &#123;	<span class="hljs-comment">//从高位开始一次输出</span><br>        cout &lt;&lt; vt[i] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span>;<br>    &#125;<br>    <span class="hljs-comment">//末尾不能有空格</span><br>    cout &lt;&lt; vt[<span class="hljs-number">0</span>] &lt;&lt; endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -342,8 +344,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PAT甲级_1001(A+B Format)</div>
-      <div>http://example.com/2024/12/26/PAT甲级_1001/</div>
+      <div>PAT甲级_1005(Spell It Right)</div>
+      <div>http://example.com/2024/12/17/PAT甲级-1005/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +357,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年12月26日</div>
+          <div>2024年12月17日</div>
         </div>
       
       
@@ -387,12 +389,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1006/" title="PAT甲级_1006(Sign In and Sign Out)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">PAT甲级_1006(Sign In and Sign Out)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1010/" title="PAT甲级_1010">
-                        <span class="hidden-mobile">PAT甲级_1010</span>
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1004/" title="PAT甲级_1004(Counting Leaves)">
+                        <span class="hidden-mobile">PAT甲级_1004(Counting Leaves)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

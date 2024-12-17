@@ -19,15 +19,15 @@
   <meta name="author" content="IMS">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+    <meta name="description" content="1007 最大子序列和给定一个包含K个整数的序列{N1，N2，…，NK}。定义连续子序列为{Ni，Ni+1，…，Nj}，且(1 &lt;&#x3D; i &lt;&#x3D; j &lt;&#x3D; K)。最大子序列是具有最大元素和的连续子序列。例如：序列{-2，11， -4，13，-5，-2}的最大子序列是{11，-4，13}，最大和是20。现在，你应该找到最大和，以及最大子序列的第一个元素和最后一个元素。 输入规范每个输">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT甲级_1001(A+B Format)">
-<meta property="og:url" content="http://example.com/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/index.html">
+<meta property="og:title" content="PAT甲级_1007(Maximum Subsequence Sum)">
+<meta property="og:url" content="http://example.com/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1007/index.html">
 <meta property="og:site_name" content="流星雨">
-<meta property="og:description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+<meta property="og:description" content="1007 最大子序列和给定一个包含K个整数的序列{N1，N2，…，NK}。定义连续子序列为{Ni，Ni+1，…，Nj}，且(1 &lt;&#x3D; i &lt;&#x3D; j &lt;&#x3D; K)。最大子序列是具有最大元素和的连续子序列。例如：序列{-2，11， -4，13，-5，-2}的最大子序列是{11，-4，13}，最大和是20。现在，你应该找到最大和，以及最大子序列的第一个元素和最后一个元素。 输入规范每个输">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-12-26T14:45:51.000Z">
-<meta property="article:modified_time" content="2024-12-16T15:18:17.688Z">
+<meta property="article:published_time" content="2024-12-17T15:39:00.000Z">
+<meta property="article:modified_time" content="2024-12-17T15:42:01.771Z">
 <meta property="article:author" content="IMS">
 <meta property="article:tag" content="计算机证书">
 <meta property="article:tag" content="PAT甲级">
@@ -35,7 +35,7 @@
   
   
   
-  <title>PAT甲级_1001(A+B Format) - 流星雨</title>
+  <title>PAT甲级_1007(Maximum Subsequence Sum) - 流星雨</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PAT甲级_1001(A+B Format)"></span>
+            <span id="subtitle" data-typed-text="PAT甲级_1007(Maximum Subsequence Sum)"></span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-26 22:45" pubdate>
-          2024年12月26日 晚上
+        <time datetime="2024-12-17 23:39" pubdate>
+          2024年12月17日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          268 字
+          578 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -285,17 +285,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">PAT甲级_1001(A+B Format)</h1>
+            <h1 id="seo-header">PAT甲级_1007(Maximum Subsequence Sum)</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="1001-A-B格式"><a href="#1001-A-B格式" class="headerlink" title="1001 A+B格式"></a>1001 A+B格式</h4><p>计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字)</p>
-<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。</p>
-<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。</p>
-<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-1000000</span> <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure>
-<h6 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-999</span>,<span class="hljs-number">991</span><br></code></pre></td></tr></table></figure>
-<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a, b;<br>    <span class="hljs-keyword">while</span>(cin &gt;&gt; a &gt;&gt; b) &#123;<br>        <span class="hljs-type">int</span> sum = a + b;<br>        <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;       <span class="hljs-comment">//表示正数</span><br>        <span class="hljs-keyword">if</span>(!sum) &#123;<br>            cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; endl;<br>            <span class="hljs-keyword">continue</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>            sum = -sum;<br>        &#125;<br>        string str = <span class="hljs-string">&quot;&quot;</span>;<br>        <span class="hljs-keyword">while</span>(sum) &#123;<br>            str += (sum % <span class="hljs-number">10</span>) + <span class="hljs-string">&#x27;0&#x27;</span>;<br>            sum /= <span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(!sign) &#123;<br>            cout &lt;&lt; <span class="hljs-string">&#x27;-&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            cout &lt;&lt; str[i];<br>            <span class="hljs-keyword">if</span>(i &amp;&amp; i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&#x27;,&#x27;</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; endl;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h4 id="1007-最大子序列和"><a href="#1007-最大子序列和" class="headerlink" title="1007 最大子序列和"></a>1007 最大子序列和</h4><p>给定一个包含K个整数的序列{N<del>1</del>，N<del>2</del>，…，N<del>K</del>}。定义连续子序列为{N<del>i</del>，N<del>i+1</del>，…，N<del>j</del>}，且(<code>1 &lt;= i &lt;= j &lt;= K</code>)。最大子序列是具有最大元素和的连续子序列。例如：序列{-2，11， -4，13，-5，-2}的最大子序列是{11，-4，13}，最大和是20。现在，你应该找到最大和，以及最大子序列的第一个元素和最后一个元素。</p>
+<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例占两行。第一行包含一个正整数K(K&lt;&#x3D;10000)。第二行包含K个用空格分离的数字。</p>
+<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于一个测试用例，在一行输出最大和，以及最大子序列的第一个元素值和最后一个元素值。这些数字用空格分隔，但是行末尾元素后不应加空格。当最大子序列不唯一时，输出索引最小的i和j(如案例所示)。如果K个数字都是负数，我们定义最大和为0，你应该输出序列的第一个和最后一个数。</p>
+<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">10</span><br><span class="hljs-number">-10</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">-5</span> <span class="hljs-number">-23</span> <span class="hljs-number">3</span> <span class="hljs-number">7</span> <span class="hljs-number">-21</span><br></code></pre></td></tr></table></figure>
+<h5 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">10</span> <span class="hljs-number">1</span> <span class="hljs-number">4</span><br></code></pre></td></tr></table></figure>
+<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;algorithm&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> MAXN = <span class="hljs-number">10005</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> INF = <span class="hljs-number">0x3f3f3f3f</span>;<br><span class="hljs-type">int</span> value[MAXN];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n; <br>    cin &gt;&gt; n;<br>    <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;   <span class="hljs-comment">//记录是否有正数，如果有，则为false</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        cin &gt;&gt; value[i];<br>        <span class="hljs-keyword">if</span>(value[i] &gt;= <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>        &#125;<br>    &#125;<br>    <br>    <span class="hljs-keyword">if</span>(sign) &#123;  <span class="hljs-comment">//特殊情况，K个数字全为负数</span><br>       cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; value[<span class="hljs-number">0</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; value[n<span class="hljs-number">-1</span>] &lt;&lt; endl;<br>    &#125;<span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-type">int</span> max_sum = -INF;     <span class="hljs-comment">//最大子序列和</span><br>        <span class="hljs-type">int</span> start = <span class="hljs-number">0</span>, end = <span class="hljs-number">0</span>; <span class="hljs-comment">//子序列的开始和结束位置索引</span><br>        <span class="hljs-type">int</span> sum = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>, t = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;     <span class="hljs-comment">//t保存当前计算的序列的开始位置</span><br>            sum += value[i];    <br>            <span class="hljs-keyword">if</span>(max_sum &lt; sum) &#123; <span class="hljs-comment">//如果当前子序列和大于以前计算的子序列和，则更新答案</span><br>                max_sum = sum;<br>                start = t;<br>                end = i;<br>            &#125;   <br>            <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;       <span class="hljs-comment">//如果当前子序列和小于0，则下一个计算的子序列不可能接在当前子序列后面(负数+X &lt; X)</span><br>                sum = <span class="hljs-number">0</span>;<br>                t = i<span class="hljs-number">+1</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; max_sum &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; value[start] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; value[end] &lt;&lt; endl;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -342,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PAT甲级_1001(A+B Format)</div>
-      <div>http://example.com/2024/12/26/PAT甲级_1001/</div>
+      <div>PAT甲级_1007(Maximum Subsequence Sum)</div>
+      <div>http://example.com/2024/12/17/PAT甲级-1007/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年12月26日</div>
+          <div>2024年12月17日</div>
         </div>
       
       
@@ -387,12 +388,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1009/" title="PAT甲级_1009(Product of Polynomials)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">PAT甲级_1009(Product of Polynomials)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1010/" title="PAT甲级_1010">
-                        <span class="hidden-mobile">PAT甲级_1010</span>
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1006/" title="PAT甲级_1006(Sign In and Sign Out)">
+                        <span class="hidden-mobile">PAT甲级_1006(Sign In and Sign Out)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -19,15 +19,15 @@
   <meta name="author" content="IMS">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+    <meta name="description" content="1003 紧急事件作为一个城市的紧急救援队队长，你会得到一张你国家的专业地图。这张地图显示了几个通过道路连接起来的分散的城市。地图上标明了每个城市的救援队伍数量和某两个城市之间每条道路的长度。当其他城市的紧急电话打给你时，你的工作就是带领你的人尽快赶到那里，同时，在路上尽可能多的招集路过城市的救援队伍。 输入规范每个输入文件包含一个测试用例。对于每个测试用例，第一行包含4个正整数：N表示城市数量(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT甲级_1001(A+B Format)">
-<meta property="og:url" content="http://example.com/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/index.html">
+<meta property="og:title" content="PAT甲级_1003(Emergency)">
+<meta property="og:url" content="http://example.com/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1003/index.html">
 <meta property="og:site_name" content="流星雨">
-<meta property="og:description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+<meta property="og:description" content="1003 紧急事件作为一个城市的紧急救援队队长，你会得到一张你国家的专业地图。这张地图显示了几个通过道路连接起来的分散的城市。地图上标明了每个城市的救援队伍数量和某两个城市之间每条道路的长度。当其他城市的紧急电话打给你时，你的工作就是带领你的人尽快赶到那里，同时，在路上尽可能多的招集路过城市的救援队伍。 输入规范每个输入文件包含一个测试用例。对于每个测试用例，第一行包含4个正整数：N表示城市数量(">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-12-26T14:45:51.000Z">
-<meta property="article:modified_time" content="2024-12-16T15:18:17.688Z">
+<meta property="article:published_time" content="2024-12-17T15:38:44.000Z">
+<meta property="article:modified_time" content="2024-12-17T15:40:21.308Z">
 <meta property="article:author" content="IMS">
 <meta property="article:tag" content="计算机证书">
 <meta property="article:tag" content="PAT甲级">
@@ -35,7 +35,7 @@
   
   
   
-  <title>PAT甲级_1001(A+B Format) - 流星雨</title>
+  <title>PAT甲级_1003(Emergency) - 流星雨</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PAT甲级_1001(A+B Format)"></span>
+            <span id="subtitle" data-typed-text="PAT甲级_1003(Emergency)"></span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-26 22:45" pubdate>
-          2024年12月26日 晚上
+        <time datetime="2024-12-17 23:38" pubdate>
+          2024年12月17日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          268 字
+          839 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          3 分钟
+          7 分钟
         
       </span>
     
@@ -285,17 +285,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">PAT甲级_1001(A+B Format)</h1>
+            <h1 id="seo-header">PAT甲级_1003(Emergency)</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="1001-A-B格式"><a href="#1001-A-B格式" class="headerlink" title="1001 A+B格式"></a>1001 A+B格式</h4><p>计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字)</p>
-<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。</p>
-<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。</p>
-<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-1000000</span> <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure>
-<h6 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-999</span>,<span class="hljs-number">991</span><br></code></pre></td></tr></table></figure>
-<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a, b;<br>    <span class="hljs-keyword">while</span>(cin &gt;&gt; a &gt;&gt; b) &#123;<br>        <span class="hljs-type">int</span> sum = a + b;<br>        <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;       <span class="hljs-comment">//表示正数</span><br>        <span class="hljs-keyword">if</span>(!sum) &#123;<br>            cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; endl;<br>            <span class="hljs-keyword">continue</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>            sum = -sum;<br>        &#125;<br>        string str = <span class="hljs-string">&quot;&quot;</span>;<br>        <span class="hljs-keyword">while</span>(sum) &#123;<br>            str += (sum % <span class="hljs-number">10</span>) + <span class="hljs-string">&#x27;0&#x27;</span>;<br>            sum /= <span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(!sign) &#123;<br>            cout &lt;&lt; <span class="hljs-string">&#x27;-&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            cout &lt;&lt; str[i];<br>            <span class="hljs-keyword">if</span>(i &amp;&amp; i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&#x27;,&#x27;</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; endl;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h4 id="1003-紧急事件"><a href="#1003-紧急事件" class="headerlink" title="1003 紧急事件"></a>1003 紧急事件</h4><p>作为一个城市的紧急救援队队长，你会得到一张你国家的专业地图。这张地图显示了几个通过道路连接起来的分散的城市。地图上标明了每个城市的救援队伍数量和某两个城市之间每条道路的长度。当其他城市的紧急电话打给你时，你的工作就是带领你的人尽快赶到那里，同时，在路上尽可能多的招集路过城市的救援队伍。</p>
+<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。对于每个测试用例，第一行包含4个正整数：N表示城市数量(N &lt;&#x3D; 500)（城市编号从0~N-1），M表示道路数，C1和C2分别表示现在所在城市和需要达到救援的城市。接下来的一行包含N个整数，其中第i个整数表示第i个城市的救援队数量。然后接下来跟随的M行，每一行有三个整数：c1,c2和L，它们分别表示两个城市和两城市之间的道路长度。数据保证至少有一条路径从C1到C2.</p>
+<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，在一行中打印两个数字：C1到C2之间的不同路径的最短路径长度个数和最短路径长度的时招集的最多救援对数目。一行中的所有数字必须用一个空格隔开，并且在一行的末尾不允许有多余的空格。</p>
+<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">5</span> <span class="hljs-number">6</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span><br><span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">3</span><br><span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span><br><span class="hljs-number">0</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span><br><span class="hljs-number">0</span> <span class="hljs-number">3</span> <span class="hljs-number">1</span><br><span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span><br><span class="hljs-number">2</span> <span class="hljs-number">4</span> <span class="hljs-number">1</span><br><span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+<h5 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">2</span> <span class="hljs-number">4</span><br></code></pre></td></tr></table></figure>
+<h5 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h5><p>dijkstra算法求单源最短路。在求最短路时更新最短路条数和救援队数目。</p>
+<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstring&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> MAXN = <span class="hljs-number">505</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> INF = <span class="hljs-number">0x3f</span>;<br><span class="hljs-type">int</span> value[MAXN];        <span class="hljs-comment">//value[i]i城市的消防员个数</span><br><span class="hljs-type">int</span> g[MAXN][MAXN];      <span class="hljs-comment">//存储每条边</span><br><br><span class="hljs-type">int</span> dis[MAXN];    <span class="hljs-comment">//dis[i]表示到i的最短路</span><br><span class="hljs-type">bool</span> sign[MAXN];    <span class="hljs-comment">//标记i是否是最短路</span><br><span class="hljs-type">int</span> cnt1[MAXN];     <span class="hljs-comment">//cnt1[i]表示到i时的最短路个数</span><br><span class="hljs-type">int</span> cnt2[MAXN];     <span class="hljs-comment">//cnt2[i]表示到i时的最短路的最多招集人数(不包含i城市的救援人数)</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">dijkstra</span><span class="hljs-params">(<span class="hljs-type">int</span> st, <span class="hljs-type">int</span> n)</span> </span>&#123;      <span class="hljs-comment">//dijkstra求单源最短路</span><br>    <span class="hljs-built_in">memset</span>(dis, INF, <span class="hljs-built_in">sizeof</span>(dis));<br>    dis[st] = <span class="hljs-number">0</span>;<br>    cnt1[st] = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n<span class="hljs-number">-1</span>; i++) &#123;<br>        <span class="hljs-type">int</span> t = <span class="hljs-number">-1</span>;        <br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) &#123;<br>            <span class="hljs-keyword">if</span>(!sign[j] &amp;&amp; (t == <span class="hljs-number">-1</span> || dis[t] &gt; dis[j])) &#123;<br>                t = j;<br>            &#125;<br>        &#125;<br>        sign[t] = <span class="hljs-literal">true</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) &#123;<br>            <span class="hljs-keyword">if</span>(t != j &amp;&amp; dis[j] &gt;= dis[t] + g[t][j]) &#123;<br>                <span class="hljs-keyword">if</span>(dis[j] == dis[t] + g[t][j]) &#123;<br>                    cnt1[j] += cnt1[t];     <span class="hljs-comment">//表示有不同路径，但相同路径长的路径</span><br>                &#125;<span class="hljs-keyword">else</span> &#123;<br>                    cnt1[j] = cnt1[t];<br>                &#125;<br>                cnt2[j] = <span class="hljs-built_in">max</span>(cnt2[j], cnt2[t] + value[t]);     <span class="hljs-comment">//更新最最多招集人数</span><br>                dis[j] = dis[t] + g[t][j];              <span class="hljs-comment">//找到一个最短点，更新其他其到起点路径</span><br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-built_in">memset</span>(g, INF, <span class="hljs-built_in">sizeof</span>(g));<br>    <span class="hljs-type">int</span> n, m, c1, c2;   <span class="hljs-comment">//城市数、道路数、出发地、目的地</span><br>    cin &gt;&gt; n &gt;&gt; m &gt;&gt; c1 &gt;&gt; c2;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        g[i][i] = <span class="hljs-number">0</span>;<br>        cin &gt;&gt; value[i];<br>    &#125;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) &#123;<br>        <span class="hljs-type">int</span> a, b, l;<br>        cin &gt;&gt; a &gt;&gt; b &gt;&gt; l;<br>        g[a][b] = l;<br>        g[b][a] = l;<br>    &#125;<br>    <span class="hljs-built_in">dijkstra</span>(c1, n);<br>    <span class="hljs-comment">//输出最多招集的救援人数时应加上本城市救援人数</span><br>    cout &lt;&lt; cnt1[c2] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; cnt2[c2]+value[c2] &lt;&lt; endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -342,8 +344,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PAT甲级_1001(A+B Format)</div>
-      <div>http://example.com/2024/12/26/PAT甲级_1001/</div>
+      <div>PAT甲级_1003(Emergency)</div>
+      <div>http://example.com/2024/12/17/PAT甲级-1003/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +357,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年12月26日</div>
+          <div>2024年12月17日</div>
         </div>
       
       
@@ -387,12 +389,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1004/" title="PAT甲级_1004(Counting Leaves)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">PAT甲级_1004(Counting Leaves)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1010/" title="PAT甲级_1010">
-                        <span class="hidden-mobile">PAT甲级_1010</span>
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1002/" title="PAT甲级_1002(A+B for Polynomials )">
+                        <span class="hidden-mobile">PAT甲级_1002(A+B for Polynomials )</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

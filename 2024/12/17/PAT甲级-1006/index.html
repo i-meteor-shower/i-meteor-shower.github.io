@@ -19,15 +19,15 @@
   <meta name="author" content="IMS">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+    <meta name="description" content="1006 签到和签退每天一开始，第一个在到机房签到的人会打开门，最后一个离开机房签退的人会锁上门。根据签到和签退的记录，你应该找到那天开门和锁门的人。 输入规范每个输入文件包含一个测试用例。每个用例都有一天的记录。用例以正整数M开头，M是记录总数，后跟M行，格式如下：ID_number Sign_in_time Sign_out_time其中时间以HH:MM:SS格式给出，ID_number是一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PAT甲级_1001(A+B Format)">
-<meta property="og:url" content="http://example.com/2024/12/26/PAT%E7%94%B2%E7%BA%A7_1001/index.html">
+<meta property="og:title" content="PAT甲级_1006(Sign In and Sign Out)">
+<meta property="og:url" content="http://example.com/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1006/index.html">
 <meta property="og:site_name" content="流星雨">
-<meta property="og:description" content="1001 A+B格式计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字) 输入规范每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。 输出规范对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。">
+<meta property="og:description" content="1006 签到和签退每天一开始，第一个在到机房签到的人会打开门，最后一个离开机房签退的人会锁上门。根据签到和签退的记录，你应该找到那天开门和锁门的人。 输入规范每个输入文件包含一个测试用例。每个用例都有一天的记录。用例以正整数M开头，M是记录总数，后跟M行，格式如下：ID_number Sign_in_time Sign_out_time其中时间以HH:MM:SS格式给出，ID_number是一个">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-12-26T14:45:51.000Z">
-<meta property="article:modified_time" content="2024-12-16T15:18:17.688Z">
+<meta property="article:published_time" content="2024-12-17T15:38:55.000Z">
+<meta property="article:modified_time" content="2024-12-17T15:41:46.254Z">
 <meta property="article:author" content="IMS">
 <meta property="article:tag" content="计算机证书">
 <meta property="article:tag" content="PAT甲级">
@@ -35,7 +35,7 @@
   
   
   
-  <title>PAT甲级_1001(A+B Format) - 流星雨</title>
+  <title>PAT甲级_1006(Sign In and Sign Out) - 流星雨</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PAT甲级_1001(A+B Format)"></span>
+            <span id="subtitle" data-typed-text="PAT甲级_1006(Sign In and Sign Out)"></span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-26 22:45" pubdate>
-          2024年12月26日 晚上
+        <time datetime="2024-12-17 23:38" pubdate>
+          2024年12月17日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          268 字
+          439 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -285,17 +285,20 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">PAT甲级_1001(A+B Format)</h1>
+            <h1 id="seo-header">PAT甲级_1006(Sign In and Sign Out)</h1>
             
             
               <div class="markdown-body">
                 
-                <h4 id="1001-A-B格式"><a href="#1001-A-B格式" class="headerlink" title="1001 A+B格式"></a>1001 A+B格式</h4><p>计算a+b并且按照要求标准输出它们的和——-也就是说，数字必须三个一组用逗号分隔(除非少于4位数字)</p>
-<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个测试用例包含一对整数a和b，其中a和b的数据范围位-10^6^ &lt;&#x3D; a, b &lt;&#x3D; 10^6^.数字用空格隔开。</p>
-<h5 id="输出规范"><a href="#输出规范" class="headerlink" title="输出规范"></a>输出规范</h5><p>对于每个测试用例，你应该在一行输出a+b的和。计算的和必须以规定的标准格式书写。</p>
-<h5 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-1000000</span> <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure>
-<h6 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-number">-999</span>,<span class="hljs-number">991</span><br></code></pre></td></tr></table></figure>
-<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a, b;<br>    <span class="hljs-keyword">while</span>(cin &gt;&gt; a &gt;&gt; b) &#123;<br>        <span class="hljs-type">int</span> sum = a + b;<br>        <span class="hljs-type">bool</span> sign = <span class="hljs-literal">true</span>;       <span class="hljs-comment">//表示正数</span><br>        <span class="hljs-keyword">if</span>(!sum) &#123;<br>            cout &lt;&lt; <span class="hljs-number">0</span> &lt;&lt; endl;<br>            <span class="hljs-keyword">continue</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(sum &lt; <span class="hljs-number">0</span>) &#123;<br>            sign = <span class="hljs-literal">false</span>;<br>            sum = -sum;<br>        &#125;<br>        string str = <span class="hljs-string">&quot;&quot;</span>;<br>        <span class="hljs-keyword">while</span>(sum) &#123;<br>            str += (sum % <span class="hljs-number">10</span>) + <span class="hljs-string">&#x27;0&#x27;</span>;<br>            sum /= <span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(!sign) &#123;<br>            cout &lt;&lt; <span class="hljs-string">&#x27;-&#x27;</span>;<br>        &#125;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = str.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            cout &lt;&lt; str[i];<br>            <span class="hljs-keyword">if</span>(i &amp;&amp; i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>) &#123;<br>                cout &lt;&lt; <span class="hljs-string">&#x27;,&#x27;</span>;<br>            &#125;<br>        &#125;<br>        cout &lt;&lt; endl;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h4 id="1006-签到和签退"><a href="#1006-签到和签退" class="headerlink" title="1006 签到和签退"></a>1006 签到和签退</h4><p>每天一开始，第一个在到机房签到的人会打开门，最后一个离开机房签退的人会锁上门。根据签到和签退的记录，你应该找到那天开门和锁门的人。</p>
+<h5 id="输入规范"><a href="#输入规范" class="headerlink" title="输入规范"></a>输入规范</h5><p>每个输入文件包含一个测试用例。每个用例都有一天的记录。用例以正整数M开头，M是记录总数，后跟M行，格式如下：<br><code>ID_number Sign_in_time Sign_out_time</code><br>其中时间以<code>HH:MM:SS</code>格式给出，<code>ID_number</code>是一个不超过15个字符的字符串。</p>
+<h5 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h5><p>对于每个测试用例，在一行中输出当天开门和锁门的人员的ID_number。这两个ID_number必须用一个空格隔开。</p>
+<p>注意：保证记录一致。也就是说，每个人的签到时间必须早于签退时间，并且没有两个人同时签到或签退。</p>
+<h5 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-number">3</span><br>CS301111 <span class="hljs-number">15</span>:<span class="hljs-number">30</span>:<span class="hljs-number">28</span> <span class="hljs-number">17</span>:<span class="hljs-number">00</span>:<span class="hljs-number">10</span><br>SC3021234 <span class="hljs-number">0</span>8:<span class="hljs-number">00</span>:<span class="hljs-number">00</span> <span class="hljs-number">11</span>:<span class="hljs-number">25</span>:<span class="hljs-number">25</span><br>CS301133 <span class="hljs-number">21</span>:<span class="hljs-number">45</span>:<span class="hljs-number">00</span> <span class="hljs-number">21</span>:<span class="hljs-number">58</span>:<span class="hljs-number">40</span><br></code></pre></td></tr></table></figure>
+<h5 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp">SC3021234 CS301133<br></code></pre></td></tr></table></figure>
+<h5 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h5><p>输入时间时可以选择使用C语言的输入函数，如<code>scanf(&quot;%d:%d:%d&quot;, &amp;s, &amp;h, &amp;s)</code>。<br>计算最早与最晚时间时可以选择将时间转变为<code>秒</code>为单位，然后再进行比较，会更简单。</p>
+<h5 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> INF = <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span> + <span class="hljs-number">100</span>;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> m;<br>    cin &gt;&gt; m;<br>    string st_name, ed_name;<br>    <span class="hljs-type">int</span> start = INF;<br>    <span class="hljs-type">int</span> end = <span class="hljs-number">-1</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) &#123;<br>        string name;<br>        <span class="hljs-type">int</span> sh, sm, ss, eh, em, es;<br>        cin &gt;&gt; name;<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d:%d:%d %d:%d:%d&quot;</span>, &amp;sh, &amp;sm, &amp;ss, &amp;eh, &amp;em, &amp;es);<br>        <span class="hljs-type">int</span> st = sh * <span class="hljs-number">3600</span> + sm * <span class="hljs-number">60</span> + ss;<br>        <span class="hljs-type">int</span> ed = eh * <span class="hljs-number">3600</span> + em * <span class="hljs-number">60</span> + es;<br>        <span class="hljs-keyword">if</span>(start &gt; st) &#123;<br>            start = st;<br>            st_name = name;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(end &lt; ed) &#123;<br>            end = ed;<br>            ed_name = name;<br>        &#125;<br>    &#125;<br>    cout &lt;&lt; st_name &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; ed_name &lt;&lt; endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -342,8 +345,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PAT甲级_1001(A+B Format)</div>
-      <div>http://example.com/2024/12/26/PAT甲级_1001/</div>
+      <div>PAT甲级_1006(Sign In and Sign Out)</div>
+      <div>http://example.com/2024/12/17/PAT甲级-1006/</div>
     </div>
     <div class="license-meta">
       
@@ -355,7 +358,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年12月26日</div>
+          <div>2024年12月17日</div>
         </div>
       
       
@@ -387,12 +390,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1007/" title="PAT甲级_1007(Maximum Subsequence Sum)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">PAT甲级_1007(Maximum Subsequence Sum)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1010/" title="PAT甲级_1010">
-                        <span class="hidden-mobile">PAT甲级_1010</span>
+                      <a href="/2024/12/17/PAT%E7%94%B2%E7%BA%A7-1005/" title="PAT甲级_1005(Spell It Right)">
+                        <span class="hidden-mobile">PAT甲级_1005(Spell It Right)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
